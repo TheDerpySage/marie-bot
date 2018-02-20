@@ -43,4 +43,4 @@ async def on_ready():
                 traceback.print_exc()
     print('Successfully logged in and booted...!')
 
-bot.run(maire_config.bot_token, reconnect=True)
+bot.run(marie_config.bot_token, reconnect=True)
