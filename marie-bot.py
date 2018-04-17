@@ -20,7 +20,7 @@ def get_prefix(bot, msg):
     # If we are in a guild, we allow for the user to mention us or use any of the prefixes in our list.
     return commands.when_mentioned_or(*prefixes)(bot, msg)
 
-startup_extensions = ['simple','youtube','k8','admin','ready']
+startup_extensions = ['simple','youtube','k8','admin','ready','storm']
 bot = commands.Bot(command_prefix=get_prefix,description=desc)
 
 @bot.event

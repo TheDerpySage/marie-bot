@@ -42,7 +42,7 @@ class YoutubeCog:
         """Searches youtube and gives you the first result"""
         await self.bot.send_typing(ctx.message.channel)
         if search is None:
-            search = "Developers"
+            search = "https://www.youtube.com/watch?v=KMU0tzLwhbE"
         url = "https://www.youtube.com/results?search_query=" + search.strip().replace(" ", "+") + "&sp=EgIQAQ%253D%253D"
         html = urllib.request.urlopen(urllib.request.Request(url)).read()
         soup = BeautifulSoup(html, "html.parser")
