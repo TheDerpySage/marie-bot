@@ -7,15 +7,15 @@ on Windows machines.
 
 DEPENDENCIES
 =============
-Python 3.5.2
+Python 3.6.5
 
 pip install discord.py
 
-pip install weather-api 
+pip install weather-api
 
 pip install weatheralerts
 
-BeautifulSoup
+pip install beautifulsoup4
 
 NOTE
 =============

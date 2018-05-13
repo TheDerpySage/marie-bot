@@ -2,10 +2,11 @@ import discord
 from discord.ext import commands
 import random
 
-#Dialogue written by Miss Atomic Bomb
+# Dialogue written by Miss Atomic Bomb
 
 class K8Cog:
-    '''K8-Bots old functions'''
+    '''K8-Bots old functions.
+    Written by LadyTitanium.'''
 
     def __init__(self, bot):
         self.bot = bot
