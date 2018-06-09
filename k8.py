@@ -2,7 +2,8 @@ import discord
 from discord.ext import commands
 import random
 
-# Dialogue written by Miss Atomic Bomb
+def mention(user : discord.Member):
+    return "<@" + user.id + ">"
 
 class K8Cog:
     '''K8-Bots old functions.
@@ -107,6 +108,3 @@ class K8Cog:
 
 def setup(bot):
     bot.add_cog(K8Cog(bot))
-
-def mention(user : discord.Member):
-    return "<@" + user.id + ">"

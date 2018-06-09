@@ -13,9 +13,9 @@ pip install discord.py
 
 pip install weather-api
 
-pip install weatheralerts
-
 pip install beautifulsoup4
+
+pip install ping3
 
 NOTE
 =============
