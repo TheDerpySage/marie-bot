@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
-import urllib2
-from ping3 import ping
 import socket
+from urllib.request import urlopen
+from ping3 import ping
 
 def string_ping(host):
     response = ping(host)
@@ -34,7 +34,7 @@ class ServerCog:
     @commands.command(pass_context = True)
     async def current_ip(self, ctx):
         """Returns Current Public IP"""
-        curIP = urllib2.urlopen('http://ip.42.pl/raw').read()
+        curIP = urlopen('http://ip.42.pl/raw').read().decode('utf-8')
         await self.bot.say(curIP)
 
     @commands.command(pass_context = True)
