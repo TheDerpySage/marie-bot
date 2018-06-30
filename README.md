@@ -13,14 +13,9 @@ pip install discord.py
 
 pip install weather-api
 
-pip install beautifulsoup4
-
 pip install ping3
 
 NOTE
 =============
 The "temp.py" files must be edited and the underscore temp removed from the
-name before the application will run. Some of the emotes in assets aren't used.
-Honestly, they should be removed but I'm a bit too lazy. There is one cog not
-included in this public repo, but that's only because it contains some info about
-my LAN.
+name before the application will run.
