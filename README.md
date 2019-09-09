@@ -1,6 +1,6 @@
 MARIE-BOT
 =============
-(This is Marie's last commit. She was abandoned for BB, who improves a lot of what I set out to do with Marie.)
+(This is Marie's last commit. She was abandoned for BB, who improves a few concepts I started with Marie.)
 A Discord bot written in Discord.py for personal use, and sharing with friends.
 She's meant to be my main server bot. I also user her to test different concepts
 to see what I can do with a Discord bot. Includes a watchdog script for running
