@@ -8,6 +8,7 @@ class AdminCog:
 		self.bot = bot
 
 	# Self made check since is_owner() doesnt appear to be working and includes server owner
+	# For Myself and the Server Owner
 	def is_super(ctx):
 		return (ctx.message.author.id == "89033229100683264") or (ctx.message.author == ctx.message.server.owner)
 
@@ -16,7 +17,7 @@ class AdminCog:
 	async def echo(self, ctx, *, message: str):
 		await self.bot.say(message)
 
-	@commands.command(hidden=True, pass_context=True)
+	@commands.command(name="reset", aliases=['restart'], hidden=True, pass_context=True)
 	@commands.check(is_super)
 	async def reset(self, ctx):
 		await self.bot.say(":0 Ok! Hold on one second.")

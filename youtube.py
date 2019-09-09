@@ -47,7 +47,6 @@ class YoutubeCog:
         html = urllib.request.urlopen(urllib.request.Request(url)).read()
         soup = BeautifulSoup(html, "html.parser")
         for vid in soup.findAll(attrs={'class':'yt-uix-tile-link'}):
-            #The If below filters out advertisement responses
             if "https://googleads" not in vid['href']:
                 await self.bot.say('https://www.youtube.com' + vid['href'])
                 break

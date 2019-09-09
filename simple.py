@@ -8,7 +8,7 @@ class SimpleCog:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
+    @commands.command(aliases=['hi', 'howdy'], pass_context=True)
     async def hello(self, ctx):
         """Greet the bot."""
         await self.bot.say('Hi.')
@@ -21,7 +21,7 @@ class SimpleCog:
             await self.bot.say("What are you doing? :/")
         else: await self.bot.say(random.choice(choices))
 
-    @commands.command(name="ask", aliases=['is', 'are', 'am', 'does', 'will', 'can', 'do', 'could', 'did'], pass_context=True)
+    @commands.command(name="ask", aliases=['is', 'are', 'am', 'does', 'will', 'can', 'do', 'could', 'did', 'should', 'would'], pass_context=True)
     async def ask(self, ctx, *, message: str = None):
         """Ask a Yes or No Question."""
         if message != None:
